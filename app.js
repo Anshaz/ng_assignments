@@ -73,9 +73,10 @@
         };
 
         service.removeItem = function (index) {
+            toBuyItems.push(boughtItems[index]);
+
             boughtItems.splice(index, 1);
-/*            toBuyItems.push(boughtItems[index]);
-*/
+
 
         };
     }
